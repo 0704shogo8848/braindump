@@ -67,7 +67,7 @@ tags:
 - **特徴**: 旧第一勧業・富士・日本興業の3行統合。強固な法人取引基盤
 
 ## Related Topics
-<!-- [[wikilinks]] to related topics -->
+- [[major-banks-us]] — Major banks in the US (comparative perspective)
 
 ## Resources
 - 各社IR資料・決算短信
