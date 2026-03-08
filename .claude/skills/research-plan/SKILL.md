@@ -25,13 +25,9 @@ You are processing research topic words from `Inbox.md` and creating structured 
 
 4. **Clean up Inbox.md**: Remove the processed lines from `Inbox.md`, keeping the frontmatter, header, and comment intact.
 
-5. **Create a PR**:
-   - Create a new branch named `research-plan/<topic-name>` (or `research-plan/batch-<date>` for multiple topics)
-   - Commit all changes with message: `Add research plan: <topic names>`
-   - Push and create a PR with:
-     - Title: `Research Plan: <topic names>`
-     - Label: `research-plan`
-     - Body listing each topic with its key questions summary
-   - Output the PR URL
+5. **Commit and push**:
+   - Stage all new/modified files
+   - Commit with message: `Add research plan: <topic names>`
+   - Push to main
 
-6. **Summary**: Tell the user which topics were planned and the PR URL. Ask them to review and merge when ready — merging will automatically trigger research execution.
+6. **Summary**: Tell the user which topics were planned and are ready for `/research-execute`.

@@ -24,10 +24,9 @@ Claude Code automates research workflows: planning, execution, and organization.
 
 ### Research Workflow
 1. User adds a line to `Inbox.md` (just a word or phrase per line)
-2. `/research-plan` — Claude creates structured research plans and opens a PR
-3. User reviews and merges the PR
-4. `/research-execute` — User runs locally to execute research, commits to main, and pushes
-5. `/research-suggest` — Claude suggests follow-up research directions (read-only, no commits)
+2. `/research-plan` — Claude creates structured research plans, commits to main and pushes
+3. `/research-execute` — Execute research for planned topics, commits to main and pushes
+4. `/research-suggest` — Claude suggests follow-up research directions (read-only, no commits)
 
 ### Casual Research
 1. `/research-chat <question>` — Ask anything, get an answer, findings auto-saved to the vault
