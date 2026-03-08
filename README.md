@@ -34,6 +34,8 @@ Everything is plain Markdown. Your notes are yours, not locked in some app.
 - [Obsidian](https://obsidian.md) — recommended for the pretty graph view, wikilinks, and Dataview queries. Any Markdown editor works, but you'll be missing out
 - Git
 
+> **New to Git, Obsidian, or Claude Code?** Check the [setup guide for non-engineers](docs/setup-guide-ja.md) (Japanese) for catch-up resources and step-by-step instructions.
+
 ## Setup
 
 1. **Clone or fork this repo**
@@ -43,27 +45,36 @@ Everything is plain Markdown. Your notes are yours, not locked in some app.
    cd my-braindump
    ```
 
-2. **Open in Obsidian** — Open the folder as a vault. Grab the [Dataview](https://github.com/blacksmithgu/obsidian-dataview) plugin for the dashboard in `Home.md`.
+2. **Open in Obsidian** — Open the folder as a vault (see "Using Obsidian" below for details).
 
 3. **Start Claude Code** — Run `claude` in the directory. `CLAUDE.md` tells Claude how everything works — no setup needed on your part.
 
 ## Usage
 
-Just talk to Claude. It figures out what you want. Or use slash commands if you're that kind of person:
+Just talk to Claude. It figures out what you want. Or use slash commands if you're that kind of person.
+Works on desktop Claude Code CLI or Claude Code on Web (also available on mobile).
 
-| Command           | What it does                                            |
-| ----------------- | ------------------------------------------------------- |
-| `/dump`           | **Thoughts** — enhances with tags and wikilinks         |
-|                   |                                                         |
-| `/ask <question>` | **Q&A** — ask anything, get an answer, findings saved   |
-|                   |                                                         |
-| `/deep-plan`      | **Deep research step 1** — turns your inbox into plans  |
-| `/deep-research`  | **Deep research step 2** — runs the actual research     |
-| `/deep-suggest`   | **Deep research bonus** — suggests follow-up directions |
-|                   |                                                         |
-| `/todo [task]`    | **Todo** — add, check off, or list tasks                |
+| Skill          | What it does                                          | Prompt that triggers it                              |
+| -------------- | ----------------------------------------------------- | ---------------------------------------------------- |
+| `dump`         | **Thoughts** — enhances with tags and wikilinks       | "Note this down: I've been thinking about AI agents…" |
+|                |                                                       |                                                      |
+| `ask`          | **Q&A** — ask anything, get an answer, findings saved | "Why did Betamax lose?"                              |
+|                |                                                       |                                                      |
+| `deep-memo`    | **Deep research step 0** — stash words in Inbox       | "Quantum computing — memo that for later"            |
+| `deep-plan`    | **Deep research step 1** — turns inbox into plans     | "Make research plans from my inbox"                  |
+| `deep-research`| **Deep research step 2** — runs the actual research   | "Research the planned topics"                        |
+| `deep-suggest` | **Deep research bonus** — suggests follow-up directions | "Anything else worth looking into?"                |
+|                |                                                       |                                                      |
+| `todo`         | **Todo** — add, check off, or list tasks              | "Add 'read that paper' to my todo"                   |
 
-`/ask` is for quick, one-off questions. The `/deep-plan` + `/deep-research` combo is for when you want to queue up topics and batch-research them later.
+`/ask` is for quick, one-off questions. `/deep-memo` → `/deep-plan` → `/deep-research` is for stashing topics and batch-researching them later.
+
+### Typical Usage
+
+1. **When busy** — Stash interesting words with `/deep-memo quantum computing`. Anytime, as many times as you want. Just stockpile what you want to look into later.
+2. **Quick lookup** — Ask Claude Code `/ask Why are Japanese interest rates so low?`. Get an answer on the spot; it's saved as a note in the vault.
+3. **When you have time** — Run `/deep-plan` to turn your inbox into research plans → `/deep-research` to execute. Claude Code automatically searches the web and creates notes.
+4. **Read later** — Open Obsidian, read the notes Claude created. Explore connections in graph view.
 
 ## Vault Structure
 
@@ -83,6 +94,30 @@ Just talk to Claude. It figures out what you want. Or use slash commands if you'
 └── .claude/skills/       # Skill definitions for slash commands
 ```
 
+## Using Obsidian
+
+Obsidian is for browsing and reading. Claude Code handles note creation and organization — Obsidian is where you read, explore, and discover connections.
+
+### First-time Setup
+
+1. Install [Obsidian](https://obsidian.md/)
+2. "Open folder as vault" → select the cloned folder
+3. Settings → Community plugins → Turn off Restricted mode → Browse → install & enable:
+   - **Dataview** — required for the `Home.md` dashboard
+   - **Obsidian Git** — required to auto-pull changes that Claude Code pushes. After installing, enable "Auto pull interval" in its settings so Obsidian stays in sync automatically
+
+### Recommended Usage
+
+- **Open Home.md** — It's a dashboard that auto-lists active topics, recent thoughts, and recent notes (requires Dataview plugin)
+- **Graph view** — Click the graph icon in the sidebar, or Cmd/Ctrl+G. Visualizes connections between notes — great for spotting unexpected relationships
+- **Wikilinks** — Click any `[[link]]` in a note to jump to the related note. Claude Code creates these links automatically
+- **Filter by tags** — Use the tag pane in the sidebar. Click `#status/active` or `#topic/xxx` to filter notes
+- **Search** — Cmd/Ctrl+Shift+F for full-text search across the entire vault
+
+### About Dataview Queries
+
+`Home.md` contains embedded Dataview queries. The Dataview plugin reads note metadata (frontmatter tags, status) and auto-generates lists. Without the plugin, the `` `dataview` `` code blocks are displayed as-is, so installing Dataview is recommended.
+
 ## Make It Yours
 
 - **Templates** — Edit files in `Templates/` to reshape how new topics, notes, and references look.
@@ -96,6 +131,15 @@ Just talk to Claude. It figures out what you want. Or use slash commands if you'
 - Internal links use `[[wikilinks]]`
 - Folder and file names are lowercase with hyphens (`quantum-computing`, `error-correction.md`)
 - Thoughts are never rewritten — only enhanced with tags and links
+
+## Branch Strategy
+
+Personal knowledge base, so it runs on **main branch only**.
+
+- Claude Code auto-commits and pushes to main after research and organization tasks
+- No PRs or branch splits — a personal vault doesn't need a review flow
+- When Obsidian is open and Claude makes changes, the Obsidian Git plugin auto-pulls and reflects them
+- If your local changes conflict with Claude Code's changes, just `git pull` and re-run Claude Code
 
 ## License
 

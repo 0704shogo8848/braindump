@@ -23,7 +23,7 @@ Claude Code automates research workflows: planning, execution, and organization.
 ## Workflows
 
 ### Deep Research Workflow
-1. User adds a line to `Inbox.md` (just a word or phrase per line)
+1. `/deep-memo <words>` — Claude adds topic words to `Inbox.md`, commits to main and pushes
 2. `/deep-plan` — Claude creates structured research plans, commits to main and pushes
 3. `/deep-research` — Execute research for planned topics, commits to main and pushes
 4. `/deep-suggest` — Claude suggests follow-up research directions (read-only, no commits)
@@ -65,6 +65,7 @@ Claude Code automates research workflows: planning, execution, and organization.
 
 ## Claude Code Skills
 - `/ask <question>` — Quick Q&A — ask anything, findings saved to vault
+- `/deep-memo <words>` — Add topic words to Inbox.md for later research
 - `/deep-plan [topics]` — Create research plans from Inbox.md or from arguments
 - `/deep-research [topics]` — Execute research for planned topics
 - `/deep-suggest [topics]` — Suggest additional research directions
