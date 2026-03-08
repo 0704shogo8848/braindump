@@ -32,7 +32,7 @@
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — CLIでも[Web版](https://claude.ai/code)でもOK
 - [Obsidian](https://obsidian.md) — グラフビュー、wikilinks、Dataviewクエリを活かすならおすすめ。他のMarkdownエディタでも動くけど、もったいない
-- Git
+- Git/Github - ローカルだけなら不要だが、Claude Web x Github連携で複数デバイスから運用できるようになる。特に、モバイルのClaudeアプリで、dump, deep-memo系のアクションができるのが旨み
 
 > **Git・Obsidian・Claude Codeが初めての人へ：** [非エンジニア向けセットアップガイド](docs/setup-guide-ja.md) にキャッチアップ資料とステップバイステップの手順をまとめています。
 
