@@ -1,7 +1,7 @@
 ---
 title: GW プリミティブキャンプ — サバイバル生活体験
-status: planned
-tags: [topic/gw-primitive-camp, status/planned]
+status: active
+tags: [topic/gw-primitive-camp, status/active]
 created: 2026-04-08
 ---
 
@@ -40,7 +40,61 @@ created: 2026-04-08
 
 ## Findings
 
-_Research pending._
+### 場所選定
+- **メイン候補: 岩手県・和賀川源流**（西和賀町）。ブナ林に覆われた秘境、登山道経由2〜3時間、イワナのアベレージ25cm、GWでも人に会わないレベルのプライバシー
+- **サブ候補**: 白神山地周辺（秋田/青森）、南アルプス源流、奥秩父・中津川支流
+- **野営の法的整理**: 河川敷は自由使用の原則で許可不要。国有林は自然公園区分次第。常識的な範囲の野営は実務的に問題になりにくい
+
+### 渓流釣り
+- GW（5月）は渓流釣りベストシーズンの入口。水温上昇で魚が活発化
+- イワナ（源流域）とヤマメ（中流域）が主な対象魚
+- 遊漁券は日券1,000〜2,000円。つりチケ・フィッシュパスでオンライン購入可能
+- 現地での捌き方: **水で洗わず**日本手拭いで清掃が旨味を保つコツ
+
+### 火起こし・野営技術
+- 摩擦式は弓きり式が最も成功率が高い。フェロセリウムロッドは初心者でも確実
+- GW山間部の夜間気温は0〜10℃。3シーズンシュラフ（快適温度0〜5℃）が必要
+- 焚き火は消防法・軽犯罪法・森林法・自然公園法が関連。河川敷の砂利上が最も安全
+
+### 食・自給自足
+- GWはタラの芽、コシアブラ、コゴミ、ワラビ、ウドが旬。山菜の天ぷら＋イワナ塩焼きが最高の食事
+- **完全自給自足は非現実的**。米・塩・味噌は持参し、タンパク質と野菜を現地調達するハイブリッド方式が最適
+- 毒草（ヤマウルシ、イヌサフラン、バイケイソウ）との誤認は命に関わる。自信がないものは食べない
+
+### 農業体験
+- **WWOOF Japan**が最適。年会費5,500円、金銭授受なしで食事・宿泊と労働を交換
+- オフグリッド生活実践ホストを選べば自給自足スキルを直接学べる
+- GW前半をWWOOF、後半を源流野営にする組み合わせプランが理想
+
+### ロジスティクス
+- 装備ゼロから: 約85,000〜197,000円。最小限なら約50,000円から可能
+- 1回のトリップ費用: 約36,500〜65,500円（交通費・遊漁券・食料・WWOOF会費含む）
+- **レンタカー必須**（源流域は公共交通機関でアクセス困難）
+- **最重要安全対策**: 熊スプレー必携、食料とテントは100m離す、衛星通信端末推奨
+
+## Notes
+
+- [[location-candidates]] — 秘境キャンプ候補地の詳細比較
+- [[stream-fishing-gw]] — GW渓流釣りの対象魚・ポイント・遊漁券
+- [[fire-making-and-camping]] — 火起こし・野営技術・法的制約
+- [[foraging-and-food]] — 山菜採集と自給自足計画
+- [[farm-stays-and-nojuku]] — WWOOF・農業体験・ファームステイ
+- [[logistics-and-safety]] — 装備リスト・予算・安全対策・スケジュール
+
+## References
+
+- [[tsuribito-waga-genryu]] — 和賀川源流の釣りガイド（つり人社）
+- [[tsuribito-genryu-iwana]] — イワナの捌き方（つり人社）
+- [[tsuribito-nyugyoken]] — 入漁券の仕組みと買い方
+- [[trout-in-shallows-best-season]] — 渓流釣りベストシーズン解説
+- [[fishpass-keiryu-kaikin-2026]] — 2026年渓流釣り解禁情報
+- [[mujinto-survival-fire]] — 摩擦式火起こし方法（無人島プロジェクト）
+- [[jmtf-takibi-law]] — 焚き火に関する法律まとめ
+- [[metabon-yaei-legality]] — 野営の合法性についての考察
+- [[yamahack-bushcraft-gear]] — ブッシュクラフト装備リスト
+- [[bepal-survival-kit-6]] — サバイバルキット必須6アイテム
+- [[camp-quests-spring-sansai]] — 春の山菜一覧
+- [[wwoof-japan]] — WWOOFジャパン公式
 
 ## Related Topics
 
@@ -49,4 +103,19 @@ _Research pending._
 
 ## Resources
 
-_To be populated during research._
+### オンラインサービス
+- [フィッシュパス](https://www.fishpass.co.jp/) — 遊漁券オンライン購入
+- [つりチケ](https://www.tsuritickets.com/) — 遊漁券スマホ購入
+- [WWOOFジャパン](https://www.wwoofjapan.com/) — 農業体験マッチング
+- [STAY JAPAN](https://stayjapan.com/) — 農泊・民泊予約
+- [SMOUT](https://smout.jp/) — 地域体験プラットフォーム
+
+### 装備購入参考
+- [YAMA HACK ブッシュクラフト装備](https://yamahack.com/228)
+- [BE-PAL サバイバルキット6選](https://www.bepal.net/know-how/survival/97628)
+- [火おこし道具ポケット](https://fire-pocket.net/) — 弓きり式セット購入
+
+### 安全・緊急
+- [YAMAP](https://yamap.com/) — 登山GPS＋登山届
+- [コンパス](https://www.mt-compass.com/) — 電子登山届
+- ガーミンinReach — 衛星通信端末（圏外SOS用）
